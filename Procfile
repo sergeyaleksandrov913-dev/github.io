@@ -1,0 +1,1 @@
+web: gunicorn proavocado.wsgi:application
