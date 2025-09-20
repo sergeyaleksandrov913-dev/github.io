@@ -29,26 +29,6 @@ def index(request):
     return render(request, 'core/index.html', context)
 
 
-def category_detail(request, category_slug):
-    """Страница детальной информации о категории"""
-    category = get_object_or_404(Category, slug=category_slug)
-    products = category.products.filter(is_active=True)
-    
-    # Получаем все категории для бокового меню
-    categories = Category.objects.all()
-    
-    # Получаем настройки сайта
-    site_settings = SiteSettings.get_settings()
-    
-    context = {
-        'category': category,
-        'products': products,
-        'categories': categories,
-        'site_settings': site_settings,
-    }
-    return render(request, 'core/category_detail.html', context)
-
-
 def product_detail(request, product_id):
     product = get_object_or_404(Product, id=product_id)
     # Получаем настройки сайта
@@ -163,6 +143,8 @@ def create_order(request):
     # Получаем настройки сайта для футера
     site_settings = SiteSettings.get_settings()
     return render(request, 'core/checkout.html', {'site_settings': site_settings})
+
+
 # Добавляем вебхук для ЮKassa
 @csrf_exempt
 @require_POST

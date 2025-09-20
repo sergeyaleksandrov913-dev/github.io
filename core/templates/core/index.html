@@ -32,8 +32,8 @@
       {% for product in products %}
         <div class="menu-item" data-category="{{ product.category.slug }}">
           {% if product.image %}
-            <!-- Используем url для медиафайлов -->
-            <img src="{{ product.image.url }}" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
+            <!-- Используем статический путь к изображению -->
+            <img src="{% static 'media/products/' %}{{ product.image.name }}" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
           {% else %}
             <div style="background-color: #f0f0f0; height: 200px; display: flex; align-items: center; justify-content: center;">
               Нет изображения
@@ -64,7 +64,7 @@
       <!-- Используем изображение из HomePageContent -->
       {% if home_content.about_image %}
         <div class="about-image">
-          <img src="{{ home_content.about_image.url }}" alt="{{ home_content.about_title }}">
+          <img src="{% static 'media/site/' %}{{ home_content.about_image.name }}" alt="{{ home_content.about_title }}">
         </div>
       {% endif %}
     </div>
@@ -79,7 +79,7 @@
       <!-- Используем изображение из HomePageContent -->
       {% if home_content.delivery_image %}
         <div class="delivery-image">
-          <img src="{{ home_content.delivery_image.url }}" alt="{{ home_content.delivery_title }}">
+          <img src="{% static 'media/site/' %}{{ home_content.delivery_image.name }}" alt="{{ home_content.delivery_title }}">
         </div>
       {% endif %}
       <div class="delivery-text">
