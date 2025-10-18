@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание сайтов на заказ | Профессиональная веб-разработка</title>
+    <meta name="description" content="Создаю современные сайты на заказ. Качественная веб-разработка с уникальным дизайном и адаптивной версткой.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Прозрачное меню -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>WebStudio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главная секция с фоновым изображением -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Создаю сайты на заказ</h1>
+            <p class="hero-subtitle">Современный дизайн, качественная разработка, быстрая реализация</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="openContactForm()">Заказать сайт</button>
+                <button class="btn-secondary" onclick="scrollToSection('services')">Узнать больше</button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Секция услуг -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Мои услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных сайтов с адаптивным дизайном и быстрой загрузкой</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Мобильная версия</h3>
+                    <p>Адаптивная верстка для всех устройств и платформ</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX дизайн</h3>
+                    <p>Современный дизайн интерфейса с учетом пользовательского опыта</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Оптимизация</h3>
+                    <p>SEO-оптимизация и повышение скорости загрузки сайта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция портфолио -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Портфолио</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Корпоративный сайт</h3>
+                        <p>Современный дизайн для бизнеса</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Интернет-магазин</h3>
+                        <p>Полнофункциональный e-commerce</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Лендинг страница</h3>
+                        <p>Конверсионная страница для продаж</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <p><a href="tel:+79147579963">+7 (914) 757-99-63</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telegram</h3>
+                            <p><a href="https://t.me/sergey.aleksandrov16" target="_blank">@sergey.aleksandrov16</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@webstudio.ru">info@webstudio.ru</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи (модальное окно) -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Связаться с нами</h2>
+                <span class="close" onclick="closeContactForm()">&times;</span>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="service">Тип услуги</label>
+                    <select id="service" name="service">
+                        <option value="">Выберите услугу</option>
+                        <option value="website">Создание сайта</option>
+                        <option value="redesign">Редизайн сайта</option>
+                        <option value="mobile">Мобильная версия</option>
+                        <option value="seo">SEO оптимизация</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Бюджет</label>
+                    <select id="budget" name="budget">
+                        <option value="">Выберите бюджет</option>
+                        <option value="50000-100000">50,000 - 100,000 ₽</option>
+                        <option value="100000-200000">100,000 - 200,000 ₽</option>
+                        <option value="200000-500000">200,000 - 500,000 ₽</option>
+                        <option value="500000+">500,000+ ₽</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Опишите ваш проект..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="switch">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <span class="slider"></span>
+                    </label>
+                    <span class="switch-label">Согласен на обработку персональных данных *</span>
+                </div>
+                <button type="submit" class="btn-submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Кнопка обратной связи (фиксированная внизу) -->
+    <div class="floating-contact-btn" onclick="openContactForm()">
+        <i class="fas fa-comments"></i>
+        <span>Связаться с нами</span>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script src="config/bot-config.js"></script>
+    <script src="js/telegram-bot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
