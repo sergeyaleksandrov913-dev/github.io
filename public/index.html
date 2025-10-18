@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Создаю сайты на заказ — Оранжевый стеклянный стиль</title>
+  <meta name="description" content="Современные сайты под заказ: стеклянный дизайн, высокая скорость, адаптивность, интеграции.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Transparent top nav over hero -->
+  <header class="topbar">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="На главную">sergey.</a>
+      <ul class="menu">
+        <li><a href="#home" class="hover-line">Главная</a></li>
+        <li><a href="#services" class="hover-line">Услуги</a></li>
+        <li><a href="#contacts" class="hover-line">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero fullscreen section with background image -->
+  <section id="home" class="hero" aria-label="Главный экран">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Создаю сайты под заказ</h1>
+      <p>Современный стеклянный дизайн в оранжевом стиле. Быстро. Адаптивно. Качественно.</p>
+      <div class="hero-cta">
+        <button class="btn-primary" id="openModalFromHero">Обсудить проект</button>
+      </div>
+
+      <div class="feature-grid">
+        <div class="glass card">
+          <h3>Стеклянный эффект</h3>
+          <p>Глубина, свет и мягкие блики — как на новейших устройствах.</p>
+        </div>
+        <div class="glass card">
+          <h3>Мобильная адаптация</h3>
+          <p>Ваш сайт идеально выглядит на любом экране.</p>
+        </div>
+        <div class="glass card">
+          <h3>Скорость и SEO</h3>
+          <p>Высокая скорость загрузки и базовая оптимизация.</p>
+        </div>
+        <div class="glass card">
+          <h3>Интеграции</h3>
+          <p>Подключение ботов, CRM, оплаты и аналитики.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Услуги</h2>
+      <div class="services-grid">
+        <div class="glass service">
+          <div class="service-head">
+            <h3>Лендинг</h3>
+            <label class="switch">
+              <input type="checkbox" id="service-landing" checked>
+              <span class="track"><span class="thumb"></span></span>
+            </label>
+          </div>
+          <p>Идеально для презентации продукта или услуги.</p>
+        </div>
+        <div class="glass service">
+          <div class="service-head">
+            <h3>Интернет‑магазин</h3>
+            <label class="switch">
+              <input type="checkbox" id="service-shop">
+              <span class="track"><span class="thumb"></span></span>
+            </label>
+          </div>
+          <p>Каталог, корзина, онлайн‑оплата и интеграции.</p>
+        </div>
+        <div class="glass service">
+          <div class="service-head">
+            <h3>Поддержка</h3>
+            <label class="switch">
+              <input type="checkbox" id="service-support">
+              <span class="track"><span class="thumb"></span></span>
+            </label>
+          </div>
+          <p>Обновления, мониторинг, улучшения и аудит.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+      <div class="contacts glass">
+        <div class="contact-item">
+          <span class="label">Телефон</span>
+          <a href="tel:+79147579963" class="value">+7 914 757‑99‑63</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Telegram</span>
+          <a href="https://t.me/sergey.aleksandrov16" target="_blank" rel="noopener" class="value">@sergey.aleksandrov16</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Email</span>
+          <a href="mailto:youremail@example.com" class="value">youremail@example.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating CTA button -->
+  <button class="floating-cta" id="openModalFloating" aria-haspopup="dialog" aria-controls="contactModal">
+    Связаться с нами
+  </button>
+
+  <!-- Contact modal -->
+  <div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content glass">
+      <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+      <h3 id="modalTitle">Заполните форму</h3>
+      <form id="contactForm" class="form">
+        <div class="form-row">
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" placeholder="Как к вам обращаться" required>
+        </div>
+        <div class="form-row two">
+          <div>
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" placeholder="+7 ...">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="telegram">Telegram</label>
+          <input id="telegram" name="telegram" type="text" placeholder="@никнейм">
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Тип проекта</legend>
+          <div class="toggle-list">
+            <label class="toggle">
+              <input type="checkbox" id="t-landing" checked>
+              <span class="track"><span class="thumb"></span></span>
+              <span class="t-label">Лендинг</span>
+            </label>
+            <label class="toggle">
+              <input type="checkbox" id="t-shop">
+              <span class="track"><span class="thumb"></span></span>
+              <span class="t-label">Интернет‑магазин</span>
+            </label>
+            <label class="toggle">
+              <input type="checkbox" id="t-support">
+              <span class="track"><span class="thumb"></span></span>
+              <span class="t-label">Поддержка</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="5" placeholder="Пару слов о задаче" required></textarea>
+        </div>
+
+        <div class="form-row accept">
+          <label class="toggle">
+            <input type="checkbox" id="acceptPolicy" checked>
+            <span class="track"><span class="thumb"></span></span>
+            <span class="t-label">Согласен(на) с политикой конфиденциальности</span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Отправить</button>
+          <span class="form-status" id="formStatus" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
