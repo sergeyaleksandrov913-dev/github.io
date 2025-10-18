@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Простой HTTP сервер для тестирования сайта
-Запуск: python3 server.py
+Запуск: python server.py
 """
 
 import http.server
