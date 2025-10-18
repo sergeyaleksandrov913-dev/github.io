@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запуск сайта</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 10px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .step {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Запуск сайта</h1>
+        <p>Выберите способ запуска:</p>
+        
+        <a href="index.html" class="btn">🌐 Открыть сайт напрямую</a>
+        
+        <div class="instructions">
+            <h3>📋 Инструкции по запуску:</h3>
+            
+            <div class="step">
+                <strong>Вариант 1 (Рекомендуется):</strong><br>
+                Дважды кликните на файл <code>start.bat</code>
+            </div>
+            
+            <div class="step">
+                <strong>Вариант 2:</strong><br>
+                Откройте PowerShell в этой папке и выполните:<br>
+                <code>python server.py</code>
+            </div>
+            
+            <div class="step">
+                <strong>Вариант 3:</strong><br>
+                Просто откройте файл <code>index.html</code> в браузере
+            </div>
+            
+            <div class="step">
+                <strong>После запуска:</strong><br>
+                Откройте браузер и перейдите по адресу:<br>
+                <code>http://localhost:8000</code>
+            </div>
+        </div>
+        
+        <p><strong>📞 Поддержка:</strong> @sergey.aleksandrov16</p>
+    </div>
+</body>
+</html>

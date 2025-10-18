@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Быстрый запуск сайта
+Быстрый запуск сайта для Windows
 """
 
 import subprocess
