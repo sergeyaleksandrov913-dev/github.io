@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запуск сайта - Простой способ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 10px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-size: 1.1rem;
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .step {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            border-left: 4px solid #FF9500;
+        }
+        .code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 5px 0;
+        }
+        .warning {
+            background: rgba(255, 193, 7, 0.2);
+            border: 1px solid rgba(255, 193, 7, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Запуск сайта</h1>
+        <p>Выберите способ запуска:</p>
+        
+        <a href="index.html" class="btn">🌐 Открыть сайт напрямую</a>
+        
+        <div class="instructions">
+            <h3>📋 Инструкции по запуску:</h3>
+            
+            <div class="step">
+                <strong>Способ 1 (Самый простой):</strong><br>
+                Дважды кликните на файл <code>start_site.bat</code>
+            </div>
+            
+            <div class="step">
+                <strong>Способ 2 (Через командную строку):</strong><br>
+                Откройте командную строку в этой папке и выполните:<br>
+                <div class="code">python webserver.py</div>
+            </div>
+            
+            <div class="step">
+                <strong>Способ 3 (Прямой запуск):</strong><br>
+                Просто откройте файл <code>index.html</code> в браузере
+            </div>
+            
+            <div class="warning">
+                <strong>⚠️ Важно:</strong><br>
+                Если Python не найден, скачайте его с <a href="https://python.org" style="color: #FF9500;">python.org</a><br>
+                При установке обязательно отметьте "Add Python to PATH"
+            </div>
+            
+            <div class="step">
+                <strong>После запуска сервера:</strong><br>
+                Откройте браузер и перейдите по адресу:<br>
+                <div class="code">http://localhost:8000</div>
+            </div>
+        </div>
+        
+        <p><strong>📞 Поддержка:</strong> @sergey.aleksandrov16</p>
+    </div>
+</body>
+</html>
